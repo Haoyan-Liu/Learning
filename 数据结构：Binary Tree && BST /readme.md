@@ -1,23 +1,23 @@
-# Tree Traversal & Binary Tree Properties
+# 树遍历与二叉树性质
 
-## Tree Traversal Methods
+## 树的遍历方法
 
-- **Pre-order Traversal** (Root → Left → Right)
-- **In-order Traversal** (Left → Root → Right)
-- **Post-order Traversal** (Left → Right → Root)
+- **前序遍历（Pre-order）**：根 → 左 → 右
+- **中序遍历（In-order）**：左 → 根 → 右
+- **后序遍历（Post-order）**：左 → 右 → 根
 
-## Balanced Binary Tree
+## 平衡二叉树（Balanced Binary Tree）
 
-A binary tree in which the height difference between the left and right subtrees of every node is at most 1.
+每个节点的左子树和右子树高度差不超过 1。
 
-## Complete Binary Tree
+## 完全二叉树（Complete Binary Tree）
 
-A binary tree in which all levels are completely filled except possibly the last level, and all nodes in the last level are as far left as possible.
+所有层都被填满，最后一层的节点尽可能靠左。
 
-A Complete Binary Tree (CBT) is always a Balanced Binary Tree.
+**完全二叉树（CBT）一定是平衡二叉树。**
 
-## Binary Search Tree (BST)
+## 二叉搜索树（BST）
 
-- **Left Subtree Rule**: The left child must contain a value less than its parent node.
-- **Right Subtree Rule**: The right child must contain a value greater than its parent node.
-- **No Duplicates (Typically)**: BSTs generally do not allow duplicate values.
+- **左子树规则**：左子节点的值小于父节点。
+- **右子树规则**：右子节点的值大于父节点。
+- **通常不允许重复值。**
