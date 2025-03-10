@@ -1,20 +1,20 @@
-# Queue, Stack, Deque
+# 队列、栈、双端队列（Queue, Stack, Deque）
 
-| **Data Structure** | **Access Order** | **Memory Storage** | **Java Class** | **Java Interface** |
+| **数据结构** | **访问顺序** | **内存存储** | **Java 类** | **Java 接口** |
 | --- | --- | --- | --- | --- |
-| **Queue** | FIFO (First In, First Out) | **Linked List** or **Array** | `LinkedList`, `PriorityQueue`, `ArrayDeque` | `Queue<E>` |
-| **Stack** | LIFO (Last In, First Out) | **Array** or **Linked List** | `Stack` (based on `Vector`, not recommended), `ArrayDeque` (recommended) | `Deque<E>` |
-| **Deque** | Supports FIFO & LIFO | **Array** or **Linked List** | `ArrayDeque`, `LinkedList` | `Deque<E>` |
+| **队列（Queue）** | 先进先出（FIFO） | **链表** 或 **数组** | `LinkedList`, `PriorityQueue`, `ArrayDeque` | `Queue<E>` |
+| **栈（Stack）** | 后进先出（LIFO） | **数组** 或 **链表** | `Stack`（基于 `Vector`，不推荐），`ArrayDeque`（推荐） | `Deque<E>` |
+| **双端队列（Deque）** | 支持 FIFO 和 LIFO | **数组** 或 **链表** | `ArrayDeque`, `LinkedList` | `Deque<E>` |
 
-## Queue
+## 队列（Queue）
 
-| **Method** | **Queue/Deque State** | **Behavior** | **Return Value if Empty** |
+| **方法** | **状态** | **行为** | **空队列返回值** |
 | --- | --- | --- | --- |
-| `offer(E e)` | Non-full queue | Adds element safely | Returns `false` if full (for bounded queues) |
-| `poll()` | Non-empty queue | Removes and returns head element | Returns `null` if empty |
-| `peek()` | Non-empty queue | Returns head element without removing | Returns `null` if empty |
+| `offer(E e)` | 非满队列 | 安全添加元素 | 有界队列时返回 `false` |
+| `poll()` | 非空队列 | 移除并返回头部元素 | 为空返回 `null` |
+| `peek()` | 非空队列 | 返回头部元素但不移除 | 为空返回 `null` |
 
-### How to define a queue
+### 队列定义示例
 
 ```java
 Queue<Integer> queue = new ArrayDeque<>();
@@ -22,18 +22,18 @@ Queue<Integer> queue = new LinkedList<>();
 Queue<Integer> queue = new PriorityQueue<>();
 ```
 
-## Stack / Deque
+## 栈 / 双端队列（Stack / Deque）
 
-| **Method** | **Description** | **Returns Special Value?** | **Throws Exception?** |
+| **方法** | **描述** | **特殊返回值** | **异常抛出** |
 | --- | --- | --- | --- |
-| `offerFirst(E e)` | Adds an element at the front | `false` if full | No |
-| `offerLast(E e)` | Adds an element at the end | `false` if full | No |
-| `pollFirst()` | Removes and returns the first element | `null` if empty | No |
-| `pollLast()` | Removes and returns the last element | `null` if empty | No |
-| `peekFirst()` | Retrieves the first element without removing | `null` if empty | No |
-| `peekLast()` | Retrieves the last element without removing | `null` if empty | No |
+| `offerFirst(E e)` | 在前端添加元素 | `false`（满） | 否 |
+| `offerLast(E e)` | 在末端添加元素 | `false`（满） | 否 |
+| `pollFirst()` | 移除并返回第一个元素 | `null`（空） | 否 |
+| `pollLast()` | 移除并返回最后一个元素 | `null`（空） | 否 |
+| `peekFirst()` | 获取第一个元素但不移除 | `null`（空） | 否 |
+| `peekLast()` | 获取最后一个元素但不移除 | `null`（空） | 否 |
 
-### How to define a stack/queue
+### 栈/双端队列定义示例
 
 ```java
 Deque<Integer> stack = new ArrayDeque<>();
