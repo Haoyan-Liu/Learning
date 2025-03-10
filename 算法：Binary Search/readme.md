@@ -1,10 +1,10 @@
-# 第一类母题：Classical Problem 找到就行
+# 第一类母题：经典问题（Classical Problem）
 
 ```cpp
 while (left ≤ right);
 ```
 
-## 2D
+## 二维查找
 
 ```cpp
 left = 0;
@@ -16,7 +16,8 @@ col = mid % matrix[0].length;
 
 ---
 
-# 第二类母题：First/Last Occurrence
+# 第二类母题：查找第一个/最后一个出现的位置（First/Last Occurrence）
 
 ```cpp
 while (left < right - 1);
+```
