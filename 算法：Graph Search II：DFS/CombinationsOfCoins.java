@@ -9,20 +9,26 @@ public class Solution {
   }
 
   private void combinations(int target, int[] coins, int coinInConsiderIndex, List<List<Integer>> result, List<Integer> subResult) {
-    if (target == 0) {
-      if (subResult.size() == coins.length) {
-        while (coins.length - subResult.size() > 0) {
-          subResult.add(0);
-        }
-      result.add(new ArrayList<>(subResult));  // very important
-      return;
-      }
-    }
-    // If we have considered all coins, stop
+    // if (target == 0) {
+    //   if (subResult.size() == coins.length) {
+    //     while (coins.length - subResult.size() > 0) {
+    //       subResult.add(0);
+    //     }
+    //   result.add(new ArrayList<>(subResult));  // very important
+    //   return;
+    //   }
+    // }
+    // // If we have considered all coins, stop
+    // if (coinInConsiderIndex == coins.length) {
+    //   return;
+    // }
     if (coinInConsiderIndex == coins.length) {
+      if (target == 0) {
+        result.add(new ArrayList<>(subResult));
+      }
       return;
     }
-    
+
     int coinValue = coins[coinInConsiderIndex];
     int maxCount = target / coins[coinInConsiderIndex];
 
