@@ -1,4 +1,17 @@
 // 凡人法
+
+// recursion tree
+//                                              “” [] {}
+//                 /                               |                                 \                      
+//            “a” [] {a}                       “b” [] {b}                        “c” [] {c}
+//        /               \                 /               \                 /               \
+//  “ab” [] {a,b}    “ac” [] {a,c}    “ba” [] {b,a}    “bc” [] {b,c}    “ca” [] {c,a}    “cb” [] {c,b}
+//        /               \                 /               \                 /               \ 
+// “abc” [] {a,b,c} “acb” [] {a,c,b} “bac” [] {b,a,c} “bca” [] {b,c,a} “cab” [] {c,a,b} “cba” [] {c,b,a}
+// 最后一层返回
+// “abc” [+"abc"] {a,b,c}   “acb” [+"acb"] {a,c,b}   “bac” [+"bac"] {b,a,c}   
+// “bca” [+"bca"] {b,c,a}   “cab” [+"cab"] {c,a,b}   “cba” [+"cba"] {c,b,a}
+
 // public class Solution {
 //   public List<String> permutations(String input) {
 //     // Write your solution here
@@ -35,6 +48,17 @@
 // }
 
 // 仙法
+
+// recursion tree
+//                                               “abc” []
+//                 /                                 |                                 \                      
+//          “a|bc” s(0,0) []                  “b|ac” s(0,1) []                  “c|ba” s(0,2) []
+//         /                \                /                \                /                \
+//  “ab|c” s(1,1) [] “ac|b” s(1,2) [] “ba|c” s(1,1) [] “bc|a” s(1,2) [] “cb|a” s(1,1) [] “ca|b” s(1,2) []
+// 最后一层返回
+// “ab|c” s(1,1) [+"abc"] “ac|b” s(1,2) [+"acb"] “ba|c” s(1,1) [+"bac"] 
+// “bc|a” s(1,2) [+"bca"] “cb|a” s(1,1) [+"cba"] “ca|b” s(1,2) [+"cab"]
+
 public class Solution {
   public List<String> permutations(String input) {
     // Write your solution here
