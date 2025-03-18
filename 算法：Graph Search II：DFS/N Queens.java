@@ -14,18 +14,18 @@ public class Solution {
       result.add(new ArrayList<>(cur));
       return;
     }
-    for (int col = 0; col < n; col++) {
-      if (isValid(cur, col)) {
-        cur.add(col);
+    for (int row = 0; row < n; row++) {
+      if (isValid(cur, row)) {
+        cur.add(row);
         dfs(result, cur, n);
         cur.remove(cur.size() - 1);
       }
     }
     return;
   }
-  private boolean isValid(List<Integer> cur, int col) {
+  private boolean isValid(List<Integer> cur, int row) {
     for (int i = 0; i < cur.size(); i++) {
-      if (cur.get(i) == col || Math.abs(col - cur.get(i)) == Math.abs(cur.size() - i)) {
+      if (cur.get(i) == row || Math.abs(row - cur.get(i)) == Math.abs(cur.size() - i)) {
         return false;
       }
     }
