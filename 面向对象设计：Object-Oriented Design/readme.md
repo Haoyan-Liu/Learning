@@ -5,13 +5,13 @@
 - Example: A "cat" can be an object with color and breed (state), and it can meow or catch mice (behavior).
 
 ### Class (类)
-| Relationship (关系) | UML Symbol (UML 符号)        | Description (描述)                                |
-|--------------------|----------------------------|-------------------------------------------------|
-| Association (关联) | Solid line (实线)           | One class knows about another (一个类知道另一个类的存在) |
-| Aggregation (聚合) | Hollow diamond + solid line (空心菱形 + 实线) | Whole-part relationship; parts can exist independently (整体-部分关系，部分可以独立存在) |
-| Composition (组合) | Filled diamond + solid line (实心菱形 + 实线) | Strong whole-part relationship; parts cannot exist independently (强整体-部分关系，部分不能独立存在) |
-| Inheritance (继承) | Hollow triangle arrow (空心三角箭头) | "Is-a" relationship (是一个关系)                   |
-| Realization (实现) | Dashed triangle arrow (虚线三角箭头) | Class implements an interface (类实现接口)         |
+| Relationship (关系) | UML Symbol (UML 符号) | Meaning (含义)                           |
+|--------------------|----------------------|------------------------------------------|
+| Association (关联) | —                    | One class references another （引用关系）   |
+| Aggregation (聚合) | ◇————               | Whole-part, part can exist alone （弱拥有关系） |
+| Composition (组合) | ◆————               | Strong whole-part, part can't exist alone （强拥有关系） |
+| Inheritance (继承) | ⬆︎                  | "Is-a" relationship （父子关系）            |
+| Realization (实现) | ╌⬆︎                 | Implements interface （接口实现）           |
 
 ### Encapsulation (封装)
 - Hiding internal implementation details and exposing only necessary interfaces.
