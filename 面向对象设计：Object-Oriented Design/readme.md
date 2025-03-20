@@ -13,7 +13,7 @@
 - Hiding internal implementation details and exposing only necessary interfaces.
 - Prevents external code from modifying internal object states arbitrarily, ensuring data safety.
 
-### Inheritance (继承)
+### Inheritance (继承)：Base Class（父类）Derived Class（子类）
 - Child classes can inherit attributes and methods from parent classes.
 - Promotes code reuse.
 - Example: A "kitten" class inherits from a "cat" class and gains all basic properties and behaviors, with the ability to add its own features.
