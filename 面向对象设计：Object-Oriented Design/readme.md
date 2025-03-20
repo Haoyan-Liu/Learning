@@ -18,7 +18,7 @@
 - Promotes code reuse.
 - Example: A "kitten" class inherits from a "cat" class and gains all basic properties and behaviors, with the ability to add its own features.
 
-### Polymorphism (多态)
+### Polymorphism (多态)：Override
 - The same method call can exhibit different behaviors depending on the object's type.
 - Example: `animal.speak()` could result in a cat meowing or a dog barking.
 
