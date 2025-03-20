@@ -5,13 +5,13 @@
 - Example: A "cat" can be an object with color and breed (state), and it can meow or catch mice (behavior).
 
 ### Class (类)
-| Relationship (关系) | UML Symbol (UML 符号) | Meaning (含义)                           |
-|--------------------|----------------------|------------------------------------------|
-| Association (关联) | —    | One class references another （引用关系）   |
-| Aggregation (聚合) | ◇————| "Has-a" Whole-part, part can exist alone （弱拥有关系） |
-| Composition (组合) | ◆————| "Has-a" Strong whole-part, part can't exist alone （强拥有关系） |
-| Inheritance (继承) | ⬆︎     | "Is-a" relationship （父子关系）            |
-| Realization (实现) | ╌⬆︎    | Implements interface （接口实现）           |
+| Relationship (关系) | UML Symbol (符号) | Meaning (含义) |
+|--------------------|-----------------|------------------------------------------------------------|
+| Association (关联) | —               | One class references another （引用关系）                    |
+| Aggregation (聚合) | ◇————           | "Has-a" relationship; whole-part, part can exist alone （弱拥有关系） |
+| Composition (组合) | ◆————           | "Has-a" strong relationship; part can't exist alone （强拥有关系）  |
+| Inheritance (继承) | ⬆︎              | "Is-a" relationship; child inherits from parent （父子关系）         |
+| Realization (实现) | ╌⬆︎             | Class implements an interface （接口实现）                      |
 
 ### Encapsulation (封装)
 - Hiding internal implementation details and exposing only necessary interfaces.
