@@ -24,7 +24,7 @@
 
 ---
 
-# ✅ OOD Interview Step-by-Step Template (面向对象设计面试答题步骤模板)
+# OOD Interview Step-by-Step Template (面向对象设计面试答题步骤模板)
 
 ## 1. Clarify Requirements (需求澄清)
 - Confirm the scope and requirements with the interviewer:
@@ -93,4 +93,5 @@
 
 ---
 
-## ✅ Memory Tip (记忆口诀)
+##  Memory Tip (记忆口诀)
+- Clarify → Identify Objects → Define Relationships → Define Responsibilities → Draw Class Diagram → Walk Through Interactions → Scalability
