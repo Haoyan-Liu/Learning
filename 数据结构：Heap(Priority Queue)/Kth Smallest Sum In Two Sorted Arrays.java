@@ -1,15 +1,7 @@
 public class Solution {
   public int kthSum(int[] a, int[] b, int k) {
     // Write your solution here
-    PriorityQueue<Node> minHeap = new PriorityQueue<>(new Comparator<Node>(){
-      @Override
-      public int compare(Node one, Node two) {
-        if (one.value == two.value) {
-          return 0;
-        }
-        return one.value < two.value ? -1 : 1;
-      }
-    });
+    PriorityQueue<Node> minHeap = new PriorityQueue<>();
     boolean[][] visited = new boolean[a.length][b.length];
     minHeap.offer(new Node(0, 0, a[0] + b[0]));
     visited[0][0] = true;
@@ -30,15 +22,14 @@ public class Solution {
     return minHeap.poll().value;
   }
 
-  class Node {
-    int i;
-    int j;
-    int value;
-
+  class Node implements Comparable<Node> {
+    int i, j, value;
     public Node(int i, int j, int value) {
-      this.i = i;
-      this.j = j;
-      this.value = value;
+      this.i = i; this.j = j; this.value = value;
+    }
+    @Override
+    public int compareTo(Node other) {
+      return Integer.compare(this.value, other.value);
     }
   }
 }
