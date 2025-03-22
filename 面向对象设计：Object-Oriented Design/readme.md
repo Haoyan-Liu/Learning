@@ -33,12 +33,12 @@
 - Example: A "kitten" class inherits from a "cat" class and gains all basic properties and behaviors, with the ability to add its own features.
 
 ### Polymorphism (多态)：
-| 特点 / Feature     | 中文说明                                             | English Explanation                                   |
-|-------------------|------------------------------------------------------|-----------------------------------------------------|
-| **概念** / Concept | 同一个接口或方法，不同对象有不同的表现               | The same interface or method behaves differently based on the object. |
-| **条件** / Conditions | 继承 + 方法重写（Override）+ 父类引用指向子类对象   | Inheritance + method overriding + parent reference pointing to child object. |
-| **体现** / How it works | 方法调用根据实际对象类型决定                      | Method calls are determined by the actual type of the object at runtime. |
-| **优势** / Advantages | 提高扩展性、灵活性，降低代码耦合                   | Improves scalability, flexibility, and reduces code coupling. |
+| 特点 / Feature | 描述 / Description |
+|----------------|---------------------------------|
+| **概念 / Concept** | 同一个接口或方法，不同对象有不同的表现。<br>The same interface or method behaves differently based on the object. |
+| **条件 / Conditions** | 需要满足继承、方法重写 (Override)、以及父类引用指向子类对象。<br>Requires inheritance, method overriding, and parent reference pointing to child object. |
+| **体现 / How it works** | 方法调用根据实际对象类型决定运行时表现。<br>Method calls are determined by the actual type of the object at runtime. |
+| **优势 / Advantages** | 提高程序扩展性和灵活性，降低耦合度。<br>Improves scalability, flexibility, and reduces coupling between components. |
 
 ---
 
