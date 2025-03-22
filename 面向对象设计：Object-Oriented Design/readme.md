@@ -33,8 +33,12 @@
 - Example: A "kitten" class inherits from a "cat" class and gains all basic properties and behaviors, with the ability to add its own features.
 
 ### Polymorphism (多态)：
-- The same method call can exhibit different behaviors depending on the object's type.
-- Example: `animal.speak()` could result in a cat meowing or a dog barking.
+| 特点 / Feature     | 中文说明                                             | English Explanation                                   |
+|-------------------|------------------------------------------------------|-----------------------------------------------------|
+| **概念** / Concept | 同一个接口或方法，不同对象有不同的表现               | The same interface or method behaves differently based on the object. |
+| **条件** / Conditions | 继承 + 方法重写（Override）+ 父类引用指向子类对象   | Inheritance + method overriding + parent reference pointing to child object. |
+| **体现** / How it works | 方法调用根据实际对象类型决定                      | Method calls are determined by the actual type of the object at runtime. |
+| **优势** / Advantages | 提高扩展性、灵活性，降低代码耦合                   | Improves scalability, flexibility, and reduces code coupling. |
 
 ---
 
