@@ -13,6 +13,16 @@
 | Inheritance (继承) | ⬆︎              | "Is-a" relationship; child inherits from parent （父子关系）         |
 | Realization (实现) | ╌⬆︎             | Class implements an interface （接口实现）                      |
 
+### Java 访问修饰符与可访问性关系表
+
+| 访问修饰符     | 本类 (class itself) | 同包 (package) | 子类 (subclass)                     | 全世界 (whole world) |
+|---------------|---------------------|-----------------|-------------------------------------|----------------------|
+| **public**    | 可访问              | 可访问          | 可访问                              | 可访问               |
+| **protected** | 可访问              | 可访问          | 可访问（包括跨包继承访问）          | 不可访问             |
+| **default**   | 可访问              | 可访问          | 不可访问                            | 不可访问             |
+| **private**   | 可访问              | 不可访问        | 不可访问                            | 不可访问             |
+
+
 ### Encapsulation (封装)
 - Hiding internal implementation details and exposing only necessary interfaces.
 - Prevents external code from modifying internal object states arbitrarily, ensuring data safety.
