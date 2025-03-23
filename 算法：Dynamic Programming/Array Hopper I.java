@@ -55,3 +55,21 @@ public class Solution {
     return reachable[length - 1];
   }
 }
+
+// Method 4 贪心法
+public class Solution {
+  public boolean canJump(int[] array) {
+    // Write your solution here
+    int farest = 0;
+    for (int i = 0; i < array.length; i++) {
+      if (i > farest) {
+        return false;
+      }
+      farest = Math.max(farest, i + array[i]);
+      if (farest >= array.length - 1) {
+        return true;
+        }
+    }
+    return false;
+  }
+}
